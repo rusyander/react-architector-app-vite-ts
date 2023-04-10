@@ -1,0 +1,35 @@
+.CartIconBox {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+.CartIconBox:hover .CartIconImageDiv {
+  background: rgba(52, 86, 255, 1);
+  transition: all 0.2s ease-in-out;
+}
+.CartIconBox:hover .CartIconText {
+  transition: all 0.2s ease-in-out;
+  color: rgba(7, 9, 40, 1);
+}
+.CartIconImageDiv {
+  width: 32px;
+  height: 32px;
+  background: rgba(52, 86, 255, 0.75);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CartIconText {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 110%;
+  display: flex;
+  align-items: center;
+  color: rgba(7, 9, 40, 0.75);
+  margin-left: 5px;
+}

@@ -1,0 +1,67 @@
+.standartImage {
+  width: 60px;
+  height: 60px;
+  border-radius: 100px;
+}
+/* ---------- */
+
+.listtImageDiv {
+  width: 60px;
+  height: 60px;
+  background: rgba(52, 86, 255, 0.5);
+  border-radius: 100px;
+  padding: 4px;
+}
+.listtImage {
+  border-radius: 100px;
+  width: 100%;
+  height: 100%;
+}
+
+.listtImageDiv:hover {
+  background: #3456ff;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.listtImageText {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #070928;
+  margin-top: 12px;
+}
+/* ---------- */
+.mainImageDiv {
+  width: 99.9px;
+  height: 102px;
+  border-radius: 100px;
+  background-color: #fff;
+  padding: 5px;
+}
+
+.mainImage {
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+}
+
+.mainImageDiv:hover {
+  background: #3456ff;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.mainImageText {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 110%;
+  text-align: center;
+  color: #070928;
+  margin-top: 12px;
+}

@@ -1,0 +1,21 @@
+.pText {
+  font-family: 'Roboto';
+  font-style: normal;
+  line-height: 110%;
+  color: rgba(7, 9, 40, 0.75);
+}
+.pMain.small {
+  font-size: 12px;
+}
+.pMain.medium {
+  font-size: 14px;
+}
+.pMain.large {
+  font-size: 16px;
+}
+.pMain.standart {
+  font-weight: 400;
+}
+.pMain.bold {
+  font-weight: 600;
+}

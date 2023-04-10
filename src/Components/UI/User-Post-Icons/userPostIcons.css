@@ -1,0 +1,21 @@
+.UserPostIconsContainer {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.UserPostIconsText {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 110%;
+  color: rgba(7, 9, 40, 0.75);
+  margin-left: 6.5px;
+}
+
+.UserPostIconsContainer:hover .UserPostIconsText {
+  color: rgba(7, 9, 40, 1);
+  transition: all 0.2s ease-in-out;
+}
