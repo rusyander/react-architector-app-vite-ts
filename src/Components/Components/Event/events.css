@@ -1,0 +1,8 @@
+.EventsMain {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.EventsMainText {
+  margin-left: 5px;
+}

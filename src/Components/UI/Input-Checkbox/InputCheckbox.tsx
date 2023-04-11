@@ -1,12 +1,24 @@
-/* eslint-disable jsx-a11y/label-has-associated-control */
+/* eslint-disable no-param-reassign */
 import React from 'react';
 import './inputCheckbox.css';
 
-export default function InputCheckbox() {
+interface InputCheckboxProps {
+  checkeds: boolean;
+  setChecked: (event: boolean) => void;
+}
+
+export default function InputCheckbox({
+  checkeds,
+  setChecked,
+}: InputCheckboxProps) {
+  const handleOnChange = () => {
+    setChecked(!checkeds);
+  };
+
   return (
     <div>
       <label className="custom-checkbox">
-        <input type="checkbox" />
+        <input type="checkbox" checked={checkeds} onChange={handleOnChange} />
         <span className="checkmark" />
       </label>
     </div>

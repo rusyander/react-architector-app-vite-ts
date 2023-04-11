@@ -24,6 +24,7 @@ module.exports = {
     // 'prefer-const': 'off',
     'jsx-quotes': ['warn', 'prefer-double'],
     'prettier/prettier': ['error', { endOfLine: 'auto' }],
+    'jsx-a11y/click-events-have-key-events': 'off',
     'jsx-a11y/label-has-associated-control': [
       2,
       {

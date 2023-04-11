@@ -1,0 +1,14 @@
+.DeviderMain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.DeviderMainText {
+  color: #070928;
+}
+.DeviderMainLine {
+  width: 100%;
+  height: 1px;
+  background-color: #070928;
+  margin: 0 11px;
+}

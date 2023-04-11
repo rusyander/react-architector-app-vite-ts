@@ -65,3 +65,9 @@
   color: #070928;
   margin-top: 12px;
 }
+/* ------- */
+.smallImage {
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+}

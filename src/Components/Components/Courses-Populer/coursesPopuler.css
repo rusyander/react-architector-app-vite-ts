@@ -1,0 +1,12 @@
+.CoursesPopulerMain {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.CoursesPopulerMainCounts {
+  align-items: center;
+  text-align: center;
+}
+.CoursesPopulerMainPaddings {
+  margin-top: 3px;
+}

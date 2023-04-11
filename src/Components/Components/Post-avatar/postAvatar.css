@@ -1,0 +1,26 @@
+.PostAvatarMain {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.PostAvatarMainText {
+  margin-left: 5px;
+}
+.PostAvatarMainTextMiddle {
+  margin: 5px 0;
+}
+.PostAvatarMainTextName {
+  color: #070928;
+}
+.PostAvatarMainTextFollowingShow {
+  display: flex;
+  align-items: center;
+}
+.PostAvatarMainTextFollowing {
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+}
+.PostAvatarMainTextFollowingPadding {
+  padding-right: 5px;
+}

@@ -6,12 +6,13 @@ interface IProps {
   size?: 'small' | 'medium' | 'large';
   weight?: 'standart' | 'bold';
   children: React.ReactNode;
+  className?: string;
 }
 
-export default function P({ size, weight, children }: IProps) {
+export default function P({ size, weight, children, className }: IProps) {
   return (
     <p
-      className={cn('pText', 'pMain', {
+      className={cn('pText', 'pMain', className, {
         small: size === 'small',
         medium: size === 'medium',
         large: size === 'large',
@@ -27,4 +28,5 @@ export default function P({ size, weight, children }: IProps) {
 P.defaultProps = {
   size: 'small',
   weight: 'standart',
+  className: '',
 };

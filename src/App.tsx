@@ -14,8 +14,30 @@ import Arrow from './Components/UI/Arrow/Arrow';
 import P from './Components/UI/P/P';
 import GreenText from './Components/UI/GreenText/GreenText';
 import InputCheckbox from './Components/UI/Input-Checkbox/InputCheckbox';
+import InputFilds from './Components/UI/Input-Filds/InputFilds';
+import InputPostFilds, {
+  SubmitData,
+} from './Components/Components/Input-Post-Fields/InputPostFilds';
+import Folliwing from './Components/Components/Following/Folliwing';
+import AccountIcons from './Components/Components/Account-Icons/AccountIcons';
+import PostAvatar from './Components/Components/Post-avatar/PostAvatar';
+import CoursesPopuler from './Components/Components/Courses-Populer/CoursesPopuler';
+import Groups from './Components/Components/Groups/Groups';
+import Events from './Components/Components/Event/Events';
+import FollowersHashtag from './Components/Components/Followers-Hashtag/FollowersHashtag';
+import ProfilViews from './Components/Components/Profil-Views/ProfilViews';
+import ProfilePosts from './Components/Components/Profile-Posts/ProfilePosts';
+import LinedInFilter from './Components/Components/LinedIn-Filter/LinedInFilter';
+import Devider from './Components/Components/Devider/Devider';
 
 function App(): JSX.Element {
+  const [value, setValue] = React.useState<SubmitData | any>({});
+  console.log('value', value);
+  const [value2, setValue2] = React.useState<SubmitData | any>({});
+  console.log('value2', value2);
+  const [value3, setValue3]: any = React.useState('');
+  console.log('value3', value3);
+
   return (
     <div className="App">
       <h1 className="sss">Hello World</h1>
@@ -62,11 +84,60 @@ function App(): JSX.Element {
         text 6
       </GreenText>
 
-      <InputCheckbox />
-      <InputCheckbox />
-      <InputCheckbox />
-      <InputCheckbox />
-      <InputCheckbox />
+      {/* <InputCheckbox checkeds={value3} setChecked={setValue3} /> */}
+      {/* <InputCheckbox />
+      <InputCheckbox /> */}
+
+      <Folliwing
+        imageUrl={AvatarImage}
+        textName="Jhon Robert"
+        text="Product Designer at dsgn.id"
+        onChange={(data) => setValue2(data)}
+      />
+
+      <AccountIcons imageUrl={AvatarImage} textName="Jhon Robert" />
+
+      <PostAvatar
+        imageUrl={AvatarImage}
+        textName="Julia Robert"
+        text="Product Designer at lancar.id"
+        time="1 hr"
+        isFollowing
+      />
+      <CoursesPopuler
+        coursesName="Learning UX Design - Mobile apps"
+        createrName="Thomas Wick"
+        count="500"
+      />
+
+      <Groups groupsName="UI  Design" />
+      <Events eventsDate="Webinar UI Design at 09:00 am." />
+      <FollowersHashtag followersName="#UIDesign" />
+
+      <ProfilViews views="16" />
+      <ProfilePosts views="500" />
+
+      <LinedInFilter category="About" setGreen returnData={setValue3} />
+      <Devider />
+      <h1>
+        Components --------------------------------------------------------
+      </h1>
+      <div className="container">
+        <h2>asdasdas</h2>
+      </div>
+      {/* <InputFilds
+        value={value}
+        placeholder="Start a post"
+        onChange={(e) => setValue(e.target.value)}
+        size="large"
+        params="post"
+      /> */}
+
+      <InputPostFilds
+        placeholder="Start a post"
+        onChange={(data) => setValue(data)}
+        size="small"
+      />
     </div>
   );
 }

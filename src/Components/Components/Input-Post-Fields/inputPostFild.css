@@ -1,0 +1,37 @@
+.InputFilds__Styling {
+  background: #f8f8fa;
+  border-radius: 26px;
+  padding: 15px 13px 18px 38px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  width: 100%;
+}
+.InputFilds__Styling__Input {
+  width: 100%;
+}
+
+.InputFilds__Styling.small {
+  height: 48px;
+}
+.InputFilds__Styling.medium {
+  height: 50px;
+}
+.InputFilds__Styling.large {
+  height: 60px;
+}
+/* ---- */
+.InputFilds__Styling__Icons {
+  display: flex;
+}
+.buttonMain {
+  margin-left: 20px;
+}
+#fileInput {
+  display: none;
+}
+#icon {
+  /* width: 100px; */
+  cursor: pointer;
+}

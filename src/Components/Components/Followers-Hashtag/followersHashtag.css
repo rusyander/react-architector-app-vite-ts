@@ -1,0 +1,9 @@
+.FollowersHashtagTextStyle {
+  padding-right: 5px;
+  cursor: pointer;
+}
+
+.FollowersHashtagTextStyle:hover {
+  color: rgba(52, 86, 255, 0.75);
+  transition: all 0.2s ease-in-out;
+}

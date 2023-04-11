@@ -1,0 +1,10 @@
+.LinedInFilterMain {
+  align-items: center;
+  justify-content: start;
+}
+.LinedInFilterMainText {
+  padding-left: 20px;
+}
+.LinedInFilterMainCheck {
+  margin-bottom: -3px;
+}

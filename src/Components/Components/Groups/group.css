@@ -1,0 +1,8 @@
+.GroupsMain {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.GroupsMainText {
+  margin-left: 5px;
+}

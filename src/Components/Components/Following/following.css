@@ -1,0 +1,18 @@
+.FolliwingMain {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.FolliwingMainText {
+  padding-left: 5px;
+}
+.FolliwingMainImage {
+  padding-left: 9px;
+  cursor: pointer;
+}
+
+.FolliwingMainImage:hover {
+  filter: invert(15%) sepia(7%) saturate(568%) hue-rotate(191deg)
+    brightness(98%) contrast(87%);
+  transition: all 0.2s ease-in-out;
+}
