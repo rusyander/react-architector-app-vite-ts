@@ -27,7 +27,7 @@ import Events from './Components/Components/Event/Events';
 import FollowersHashtag from './Components/Components/Followers-Hashtag/FollowersHashtag';
 import ProfilViews from './Components/Components/Profil-Views/ProfilViews';
 import ProfilePosts from './Components/Components/Profile-Posts/ProfilePosts';
-import LinedInFilter from './Components/Components/LinedIn-Filter/LinedInFilter';
+import LinedInFilter from './Components/Components/LinkedIn-Filter/LinkedInFilter';
 import Devider from './Components/Components/Devider/Devider';
 
 function App(): JSX.Element {

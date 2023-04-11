@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './linedInFilter.css';
+import './linkedInFilter.css';
 import InputCheckbox from '../../UI/Input-Checkbox/InputCheckbox';
 import P from '../../UI/P/P';
 import GreenText from '../../UI/GreenText/GreenText';
