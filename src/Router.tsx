@@ -1,9 +1,7 @@
-import { Route, Routes, useLocation } from 'react-router-dom';
 import React from 'react';
+import { Route, Routes, useLocation } from 'react-router-dom';
 
 import Homes from './Components/Pages/Home/Home';
-import Second from './Components/Pages/Second';
-import First from './Components/Pages/First';
 
 export default function Routers(): JSX.Element {
   const location = useLocation();
@@ -11,8 +9,6 @@ export default function Routers(): JSX.Element {
   return (
     <Routes location={location}>
       <Route path="/" element={<Homes />} />
-      <Route path="/second" element={<Second />} />
-      <Route path="/first" element={<First />} />
     </Routes>
   );
 }

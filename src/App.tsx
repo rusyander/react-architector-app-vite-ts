@@ -39,9 +39,13 @@ function App(): JSX.Element {
   console.log('value3', value3);
 
   return (
-    <div className="App">
-      <h1 className="sss">Hello World</h1>
+    <div className="Main">
       <Routers />
+
+      <Devider />
+      <Devider />
+      <Devider />
+
       <PageButtons value={Home} url="/first" />
       <PageButtons value={Home} url="/second" />
 

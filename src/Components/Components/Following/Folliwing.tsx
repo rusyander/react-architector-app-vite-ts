@@ -26,12 +26,14 @@ export default function Folliwing({
   }
   return (
     <div className="FolliwingMain">
-      <Avatar imageUrl={imageUrl} avatar="small" />
-      <div className="FolliwingMainText">
-        <P size="medium" weight="bold">
-          {textName}
-        </P>
-        <P size="small">{text}</P>
+      <div className="FolliwingMainLeft">
+        <Avatar imageUrl={imageUrl} avatar="small" />
+        <div className="FolliwingMainText">
+          <P size="medium" weight="bold" className="FolliwingMainColors">
+            {textName}
+          </P>
+          <P size="small">{text}</P>
+        </div>
       </div>
       <img
         role="presentation"

@@ -1,0 +1,8 @@
+.FormsMain {
+  display: flex;
+  align-items: center;
+}
+.FormsMainInputs {
+  margin-left: 10px;
+  width: 100%;
+}

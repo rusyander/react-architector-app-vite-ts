@@ -1,0 +1,17 @@
+.FollowedHashtagsMain {
+  margin-top: 26px;
+}
+
+.FollowedHashtagsMainTitle {
+  color: #070928;
+}
+.FollowedHashtagsMainHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.FollowedHashtagsMainLinkss {
+  margin-top: 5px;
+  display: flex;
+  flex-wrap: wrap;
+}

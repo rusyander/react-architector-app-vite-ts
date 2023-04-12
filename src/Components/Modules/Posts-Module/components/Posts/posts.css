@@ -1,0 +1,27 @@
+.PostsMain {
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 30px 16px;
+}
+.PostsMainText {
+  margin-top: 20px;
+}
+.PostsMainLinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+.PostsMainTranslate {
+  cursor: pointer;
+}
+.PostsMainImageContents {
+  margin-top: 5px;
+  border-radius: 12px;
+}
+.PostsMainLinks {
+  margin-top: 13px;
+}
+.PostsMainForms {
+  margin-top: 30px;
+}

@@ -1,0 +1,6 @@
+.NavigationsMain {
+  display: flex;
+  margin-left: 10px;
+  margin-right: 10px;
+  gap: 30px;
+}

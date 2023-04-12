@@ -1,18 +1,28 @@
 .FolliwingMain {
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.FolliwingMainLeft {
+  display: flex;
   align-items: center;
 }
 .FolliwingMainText {
   padding-left: 5px;
+  padding-right: 9px;
 }
 .FolliwingMainImage {
-  padding-left: 9px;
   cursor: pointer;
+  width: 15px;
+  height: 15px;
 }
 
 .FolliwingMainImage:hover {
   filter: invert(15%) sepia(7%) saturate(568%) hue-rotate(191deg)
     brightness(98%) contrast(87%);
   transition: all 0.2s ease-in-out;
+}
+.FolliwingMainColors {
+  color: #070928;
 }

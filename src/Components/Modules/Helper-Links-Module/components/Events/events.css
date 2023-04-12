@@ -1,0 +1,15 @@
+.EventsMains {
+  margin-top: 20px;
+}
+
+.EventHeaderTitle {
+  color: #070928;
+}
+.EventHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.EventsDatas {
+  margin-top: 8px;
+}

@@ -1,0 +1,21 @@
+.ContentsMain {
+  width: 100%;
+  padding: 23px 0;
+}
+.contentLeftSide {
+  margin-right: 30px;
+}
+.ContantsHelpers {
+  margin-top: 21px;
+}
+.contentsRightSide {
+  margin-left: 30px;
+}
+
+.contentsRightSidePaddings {
+  margin-top: 10px;
+}
+.contentsRightSideDevider {
+  margin-top: 18px;
+  margin-bottom: 3px;
+}

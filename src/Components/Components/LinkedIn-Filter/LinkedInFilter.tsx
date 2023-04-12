@@ -38,15 +38,11 @@ export default function LinedInFilter({
         <InputCheckbox checkeds={checked} setChecked={setChecked} />
       </div>
       {setGreen === false ? (
-        <P size="small" className="LinedInFilterMainText" weight="standart">
+        <P size="small" className="LinedInFilterMainText" weight="bold">
           {category}
         </P>
       ) : (
-        <GreenText
-          size="small"
-          className="LinedInFilterMainText"
-          weight="standart"
-        >
+        <GreenText size="small" className="LinedInFilterMainText" weight="bold">
           {category}
         </GreenText>
       )}

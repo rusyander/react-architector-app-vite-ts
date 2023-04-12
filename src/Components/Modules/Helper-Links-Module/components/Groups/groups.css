@@ -1,0 +1,15 @@
+.GroupsHeaderTitle {
+  color: #070928;
+}
+.GroupsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.GroupsContent {
+  margin-top: 7px;
+}
+.GroupsContentMore {
+  color: #4fcb8d;
+  padding: 7px 0 0 22px;
+}

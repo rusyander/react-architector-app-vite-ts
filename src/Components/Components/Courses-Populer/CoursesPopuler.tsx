@@ -18,7 +18,7 @@ export default function CoursesPopuler({
   return (
     <div className="CoursesPopulerMain">
       <div>
-        <P weight="bold" size="small">
+        <P weight="bold" size="small" className="CoursesPopulerMainTitle">
           {coursesName}
         </P>
         <P
@@ -30,7 +30,11 @@ export default function CoursesPopuler({
         </P>
       </div>
       <div className="CoursesPopulerMainCounts">
-        <img src={EyeImages} alt="" />
+        <img
+          src={EyeImages}
+          className="CoursesPopulerMainCountsImages"
+          alt=""
+        />
         <P
           weight="standart"
           className="CoursesPopulerMainPaddings"

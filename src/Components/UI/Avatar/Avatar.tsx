@@ -1,7 +1,7 @@
 import React from 'react';
 import './avatar.css';
 
-type UserAvatar = 'list' | 'standart' | 'main' | 'small';
+type UserAvatar = 'list' | 'standart' | 'main' | 'small' | 'default';
 
 interface AvatarProps {
   imageUrl: string;
@@ -33,6 +33,8 @@ export default function Avatar({ imageUrl, avatar, text }: AvatarProps) {
       {avatar === 'small' && (
         <img src={imageUrl} className="smallImage" alt="avatar" />
       )}
+
+      {avatar === 'default' && <img src={imageUrl} alt="avatar" />}
     </div>
   );
 }

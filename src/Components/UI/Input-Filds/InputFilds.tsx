@@ -60,13 +60,11 @@ export default function InputFilds({
 
       {params === 'post' && (
         <input
-          //   className={cn('InputFilds__input__Post', {
-          //     small: size === 'small',
-          //     medium: size === 'medium',
-          //     large: size === 'large',
-          //   })}
-
-          className="InputFilds__input__Post"
+          className={cn('InputFilds__input__Post', {
+            small: size === 'small',
+            medium: size === 'medium',
+            large: size === 'large',
+          })}
           type={type}
           placeholder={placeholder}
           value={value}
