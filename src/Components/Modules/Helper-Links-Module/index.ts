@@ -1,3 +1,4 @@
 import HelpersLink from './components/Helpers-Link/HelpersLink';
+import helperLinksSlice from './store/helperLinks';
 
-export default { HelpersLink };
+export { HelpersLink, helperLinksSlice };

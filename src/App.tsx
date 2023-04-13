@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+
+import Routers from './Router';
 
 import PageButtons from './Components/UI/Page-buttons/PageButtons';
 import Home from './assets/images/homeIcon.svg';
 import AvatarImage from './assets/images/userIcon.svg';
-
-import Routers from './Router';
 import Avatar from './Components/UI/Avatar/Avatar';
 import CartIconProps from './Components/UI/Cart-icon/CartIcon';
 import Photo from './assets/images/photo.svg';
@@ -29,20 +29,31 @@ import ProfilViews from './Components/Components/Profil-Views/ProfilViews';
 import ProfilePosts from './Components/Components/Profile-Posts/ProfilePosts';
 import LinedInFilter from './Components/Components/LinkedIn-Filter/LinkedInFilter';
 import Devider from './Components/Components/Devider/Devider';
+import { useAppDispatch } from './hook/UseRedux';
+import { fetchUser } from './Components/Modules/Header-Module/store/userSlice';
+import { fetchUserProfile } from './Components/Modules/User-Cart/store/userProfileSlice';
+import { helperLinkfetch } from './Components/Modules/Helper-Links-Module/store/helperLinks';
 
 function App(): JSX.Element {
-  const [value, setValue] = React.useState<SubmitData | any>({});
-  console.log('value', value);
-  const [value2, setValue2] = React.useState<SubmitData | any>({});
-  console.log('value2', value2);
-  const [value3, setValue3]: any = React.useState('');
-  console.log('value3', value3);
+  const dispatch = useAppDispatch();
+
+  useEffect(() => {
+    dispatch(fetchUser());
+    dispatch(fetchUserProfile());
+    dispatch(helperLinkfetch());
+  }, [dispatch]);
+  // const [value, setValue] = React.useState<SubmitData | any>({});
+  // console.log('value', value);
+  // const [value2, setValue2] = React.useState<SubmitData | any>({});
+  // console.log('value2', value2);
+  // const [value3, setValue3]: any = React.useState('');
+  // console.log('value3', value3);
 
   return (
     <div className="Main">
       <Routers />
 
-      <Devider />
+      {/* <Devider />
       <Devider />
       <Devider />
 
@@ -86,13 +97,13 @@ function App(): JSX.Element {
       </GreenText>
       <GreenText size="medium" weight="bold">
         text 6
-      </GreenText>
+      </GreenText> */}
 
-      {/* <InputCheckbox checkeds={value3} setChecked={setValue3} /> */}
-      {/* <InputCheckbox />
-      <InputCheckbox /> */}
+      {/* <InputCheckbox checkeds={value3} setChecked={setValue3} />
+     <InputCheckbox />
+      <InputCheckbox />  */}
 
-      <Folliwing
+      {/* <Folliwing
         imageUrl={AvatarImage}
         textName="Jhon Robert"
         text="Product Designer at dsgn.id"
@@ -128,7 +139,7 @@ function App(): JSX.Element {
       </h1>
       <div className="container">
         <h2>asdasdas</h2>
-      </div>
+      </div> */}
       {/* <InputFilds
         value={value}
         placeholder="Start a post"
@@ -137,11 +148,11 @@ function App(): JSX.Element {
         params="post"
       /> */}
 
-      <InputPostFilds
+      {/* <InputPostFilds
         placeholder="Start a post"
         onChange={(data) => setValue(data)}
         size="small"
-      />
+      /> */}
     </div>
   );
 }

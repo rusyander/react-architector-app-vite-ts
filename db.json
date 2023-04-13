@@ -1,0 +1,217 @@
+{
+  "groupEventHashtag": [
+    {
+      "groupName": [
+        { "groups": "UI/UX Design", "id": "1" },
+        { "groups": "UI Design", "id": "2" },
+        { "groups": "UI/UX Design", "id": "3" },
+        { "groups": "UI Design", "id": "4" }
+      ]
+    },
+    { "event": "Webinar UI Design at 09:00 am." },
+    {
+      "hashtags": [
+        { "hashtag": "#UIDesign", "id": "1" },
+        { "hashtag": "#UIUXDesign", "id": "2" },
+        { "hashtag": "#UIRemote", "id": "3" },
+        { "hashtag": "#wfh", "id": "4" },
+        { "hashtag": "#RemoteWork", "id": "5" },
+        { "hashtag": "#UXDesign", "id": "61" },
+        { "hashtag": "#jobsUIDesign", "id": "7" },
+        { "hashtag": "#Userexperince", "id": "8" }
+      ]
+    }
+  ],
+
+  "coursesPopuler": [
+    {
+      "counsName": "Learning UX Design - Mobile apps",
+      "id": "1",
+      "createrName": "Thomas Wick",
+      "count": "50"
+    },
+    {
+      "counsName": "How to Be UI Design",
+      "id": "2",
+      "createrName": "Alan UI Design",
+      "count": "150"
+    },
+    {
+      "counsName": "How to Be Develover Golang",
+      "id": "3",
+      "createrName": "Rubicode ",
+      "count": "20"
+    },
+    {
+      "counsName": "Tips and Trick Freelance",
+      "id": "4",
+      "createrName": "purwanstudio",
+      "count": "980"
+    },
+    {
+      "counsName": "Learning UX Design - Mobile apps",
+      "id": "5",
+      "createrName": "Thomas Wick",
+      "count": "1050"
+    }
+  ],
+
+  "following": [
+    {
+      "userImage": "./userIcon.svg",
+      "userName": "Jhon Robert",
+      "proffesion": "Product Designer at dsgn.id",
+      "id": "1"
+    },
+    {
+      "userImage": "./userIcon.svg",
+      "userName": "Greg",
+      "proffesion": "Web Designer freelance",
+      "id": "2"
+    },
+    {
+      "userImage": "./userIcon.svg",
+      "userName": "Arthur",
+      "proffesion": "Web Developer at ui.uk",
+      "id": "3"
+    },
+    {
+      "userImage": "./userIcon.svg",
+      "userName": "Cody",
+      "proffesion": "UX Designer at bro.us",
+      "id": "4"
+    }
+  ],
+
+  "users": [
+    {
+      "userImage": "./userIcon.svg",
+      "id": "1",
+      "name": "Shane"
+    },
+    {
+      "userImage": "./userIcon.svg",
+      "id": "2",
+      "name": "Randall"
+    },
+    {
+      "userImage": "./userIcon.svg",
+      "id": "3",
+      "name": "Leslie"
+    },
+    {
+      "userImage": "./userIcon.svg",
+      "id": "4",
+      "name": "Leslie"
+    },
+    {
+      "userImage": "./userIcon.svg",
+      "id": "5",
+      "name": "Julie"
+    },
+    {
+      "userImage": "./userIcon.svg",
+      "id": "6",
+      "name": "Dwight"
+    },
+    {
+      "userImage": "./userIcon.svg",
+      "id": "7",
+      "name": "Dwight"
+    },
+    {
+      "userImage": "./userIcon.svg",
+      "id": "8",
+      "name": "Philip"
+    },
+    {
+      "userImage": "./userIcon.svg",
+      "id": "9",
+      "name": "Randall"
+    },
+    {
+      "userImage": "./userIcon.svg",
+      "id": "10",
+      "name": "Dwight"
+    },
+    {
+      "userImage": "./userIcon.svg",
+      "id": "11",
+      "name": "Shane"
+    },
+    {
+      "userImage": "./userIcon.svg",
+      "id": "12",
+      "name": "Philip"
+    },
+    {
+      "userImage": "./userIcon.svg",
+      "id": "13",
+      "name": "Shane"
+    },
+    {
+      "userImage": "./userIcon.svg",
+      "id": "14",
+      "name": "Randall"
+    },
+    {
+      "userImage": "./userIcon.svg",
+      "id": "15",
+      "name": "Philip"
+    },
+    {
+      "userImage": "./userIcon.svg",
+      "id": "16",
+      "name": "Dwight"
+    },
+    {
+      "userImage": "./userIcon.svg",
+      "id": "17",
+      "name": "Randall"
+    },
+    {
+      "userImage": "./userIcon.svg",
+      "id": "18",
+      "name": "Dwight"
+    },
+    {
+      "userImage": "./userIcon.svg",
+      "id": "19",
+      "name": "Shane"
+    },
+    {
+      "userImage": "./userIcon.svg",
+      "id": "20",
+      "name": "Philip"
+    },
+    {
+      "userImage": "./userIcon.svg",
+      "id": "21",
+      "name": "Shane"
+    },
+    {
+      "userImage": "./userIcon.svg",
+      "id": "22",
+      "name": "Dwight"
+    }
+  ],
+
+  "userProfile": [
+    {
+      "userImage": "./userIcon.svg",
+      "userName": "Wawan Purwanto",
+      "proffesion": "I have experince 1 year UI/UX Design",
+      "profileViews": "14",
+      "profilePost": "240",
+      "id": "1"
+    }
+  ],
+
+  "user": [
+    {
+      "username": "Wawan Purwanto",
+      "id": "1",
+      "avatar": "./userIcon.svg"
+    }
+  ]
+}

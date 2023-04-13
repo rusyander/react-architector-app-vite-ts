@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './header.css';
-import HeaderModule from '../../Modules/Header-Module';
+import { HeaderModule } from '../../Modules/Header-Module';
 
 export default function Header() {
   return (

@@ -37,6 +37,12 @@ export default function Contents() {
             <div className="contentsRightSidePaddings">
               <Posts />
             </div>
+            <div className="contentsRightSidePaddings">
+              <Posts />
+            </div>
+            <div className="contentsRightSidePaddings">
+              <Posts />
+            </div>
           </div>
 
           <div className="col-lg-3 col-md-3 col-sm-3">

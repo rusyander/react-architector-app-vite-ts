@@ -5,8 +5,13 @@ import P from '../../../../UI/P/P';
 import Arrow from '../../../../UI/Arrow/Arrow';
 import Group from '../../../../Components/Groups/Groups';
 import GreenText from '../../../../UI/GreenText/GreenText';
+import { GroupName } from '../../model/helperLinkModel';
 
-export default function Groups() {
+interface GroupsProps {
+  groups: GroupName[];
+}
+
+export default function Groups({ groups }: GroupsProps) {
   return (
     <div>
       <div className="GroupsHeader">
@@ -15,15 +20,14 @@ export default function Groups() {
         </P>
         <Arrow position="right" />
       </div>
-      <div className="GroupsContent">
-        <Group groupsName="UI/UX Design" />
-      </div>
-      <div className="GroupsContent">
-        <Group groupsName="UI  Design" />
-      </div>
-      <div className="GroupsContent">
-        <Group groupsName="UI  Design" />
-      </div>
+      {groups?.map((group) => {
+        return (
+          <div key={group.id} className="GroupsContent">
+            <Group groupsName={group.groups} />
+          </div>
+        );
+      })}
+
       <GreenText size="medium" weight="bold" className="GroupsContentMore">
         More
       </GreenText>
