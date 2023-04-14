@@ -4,6 +4,7 @@ import './following.css';
 import Avatar from '../../UI/Avatar/Avatar';
 import P from '../../UI/P/P';
 import AddIcons from '../../../assets/images/plus-circle.svg';
+import UserIcons from '../../../assets/images/userIcon.svg';
 
 interface FolliwingProps {
   imageUrl: string;
@@ -27,7 +28,10 @@ export default function Folliwing({
   return (
     <div className="FolliwingMain">
       <div className="FolliwingMainLeft">
-        <Avatar imageUrl={imageUrl} avatar="small" />
+        <Avatar
+          imageUrl={imageUrl == null ? UserIcons : imageUrl}
+          avatar="small"
+        />
         <div className="FolliwingMainText">
           <P size="medium" weight="bold" className="FolliwingMainColors">
             {textName}

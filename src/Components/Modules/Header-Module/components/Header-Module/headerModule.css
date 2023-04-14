@@ -5,6 +5,7 @@
 .HeaderModuleMainOrientations {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
 }
 .HeaderModuleMainSearch {
@@ -13,6 +14,7 @@
 }
 .HeaderModuleMainDivider {
   width: 4px;
+  height: 35px;
   background-color: rgba(0, 0, 0, 0.25);
   margin: 8px 0;
 }

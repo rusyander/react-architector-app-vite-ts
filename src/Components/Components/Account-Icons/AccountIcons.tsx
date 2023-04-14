@@ -4,6 +4,8 @@ import './accountIcons.css';
 import Avatar from '../../UI/Avatar/Avatar';
 import Arrow from '../../UI/Arrow/Arrow';
 
+import UsertAvatar from '../../../assets/images/userIcon.svg';
+
 interface AccountIconsProps {
   imageUrl: string;
   textName: string;
@@ -16,7 +18,10 @@ export default function AccountIcons({
   return (
     <div className="AccountIconsMain">
       <div className="AccountIconsMainAvatar">
-        <Avatar imageUrl={imageUrl} avatar="small" />
+        <Avatar
+          imageUrl={imageUrl == null ? UsertAvatar : imageUrl}
+          avatar="small"
+        />
       </div>
       <p className="AccountIconsMainText">{textName}</p>
       <Arrow position="bottom" />

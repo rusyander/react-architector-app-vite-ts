@@ -1,6 +1,9 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import './inputFilds.css';
 import cn from 'classnames';
+
+// import PropTypes from 'prop-types';
 
 import SearchIcons from '../../../assets/images/search.svg';
 
@@ -80,3 +83,12 @@ InputFilds.defaultProps = {
   size: 'small',
   params: 'profile',
 };
+
+// InputFilds.propTypes = {
+//   type: PropTypes.oneOf(['text', 'password', 'email', 'number']),
+//   placeholder: PropTypes.string.isRequired,
+//   value: PropTypes.string.isRequired,
+//   onChange: PropTypes.func.isRequired,
+//   size: PropTypes.oneOf(['small', 'medium', 'large']),
+//   params: PropTypes.oneOf(['search', 'post', 'profile']),
+// };

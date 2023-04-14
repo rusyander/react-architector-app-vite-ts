@@ -9,10 +9,13 @@
     "preview": "vite preview",
     "test": "vitest",
     "server": "json-server --watch db.json --port 9988",
-    "start": "concurrently \"npm run dev\" \"npm run server\" "
+    "start": "concurrently \"npm run dev\" \"npm run server\" ",
+    "sb": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.3",
+    "@storybook/react": "^7.0.4",
     "bootstrap": "^5.2.3",
     "classnames": "^2.3.2",
     "react": "^18.2.0",
@@ -22,6 +25,12 @@
     "react-router-dom": "^6.10.0"
   },
   "devDependencies": {
+    "@storybook/addon-essentials": "^7.0.4",
+    "@storybook/addon-interactions": "^7.0.4",
+    "@storybook/addon-links": "^7.0.4",
+    "@storybook/blocks": "^7.0.4",
+    "@storybook/react-vite": "^7.0.4",
+    "@storybook/testing-library": "^0.0.14-next.2",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",
     "@types/react": "^18.0.28",
@@ -39,9 +48,12 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-plugin-storybook": "^0.6.11",
     "jsdom": "^21.1.1",
     "json-server": "^0.17.3",
     "prettier": "^2.8.7",
+    "prop-types": "^15.8.1",
+    "storybook": "^7.0.4",
     "typescript": "^4.9.3",
     "vite": "^4.2.0",
     "vitest": "^0.29.8"

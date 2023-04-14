@@ -2,6 +2,8 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './pageButtons.css';
 
+import HomeIcon from '../../../assets/images/homeIcon.svg';
+
 interface PageButtonsProps {
   value: string;
   url: string;
@@ -19,7 +21,7 @@ export default function PageButtons({
       }
     >
       <button type="button">
-        <img src={value} alt="" />
+        <img src={value == null ? HomeIcon : value} alt="" />
       </button>
     </NavLink>
   );

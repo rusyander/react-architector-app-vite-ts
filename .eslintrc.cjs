@@ -10,6 +10,7 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
+    'plugin:storybook/recommended',
   ],
   overrides: [],
   parser: '@typescript-eslint/parser',
@@ -20,10 +21,21 @@ module.exports = {
   },
   plugins: ['react', '@typescript-eslint', 'prettier'],
   rules: {
+    'react/react-in-jsx-scope': 'off',
+    'react/function-component-definition': [
+      2,
+      {
+        unnamedComponents: 'function-expression',
+      },
+    ],
     quotes: ['error', 'single'],
-    // 'prefer-const': 'off',
     'jsx-quotes': ['warn', 'prefer-double'],
-    'prettier/prettier': ['error', { endOfLine: 'auto' }],
+    'prettier/prettier': [
+      'error',
+      {
+        endOfLine: 'auto',
+      },
+    ],
     'jsx-a11y/click-events-have-key-events': 'off',
     'jsx-a11y/label-has-associated-control': [
       2,
