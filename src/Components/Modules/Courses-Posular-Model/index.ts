@@ -1,3 +1,4 @@
-import CoursesPopular from './components/Courses-Popular/CoursesPopular';
+import CoursesPopular from './components/Courses-Popular/CoursesPopuler';
+import coursesPopulerSlice from './store/coursesPopulerSlice';
 
-export default { CoursesPopular };
+export { CoursesPopular, coursesPopulerSlice };

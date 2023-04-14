@@ -4,7 +4,7 @@ import './contents.css';
 import UserCarts from '../../Modules/User-Cart/components/User-carts/UserCarts';
 import HelpersLink from '../../Modules/Helper-Links-Module/components/Helpers-Link/HelpersLink';
 import Followings from '../../Modules/Following-Model/components/Followings/Followings';
-import CoursesPopular from '../../Modules/Courses-Posular-Model/components/Courses-Popular/CoursesPopular';
+import CoursesPopular from '../../Modules/Courses-Posular-Model/components/Courses-Popular/CoursesPopuler';
 import LinkedIn from '../../Modules/LinkedIn-modules/components/LinkedIn/LinkedIn';
 import Message from '../../Modules/Message-modules/components/Message/Message';
 import UserCarusel from '../../Modules/User-Carusel-Module/components/User-Carusel/UserCarusel';

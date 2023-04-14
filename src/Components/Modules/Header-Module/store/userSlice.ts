@@ -16,7 +16,6 @@ export const fetchUser = createAsyncThunk<
   { rejectedValue: string }
   // eslint-disable-next-line consistent-return
 >('user/fetchUser', async function (_, { rejectWithValue }) {
-  console.log('response');
   try {
     const response = await fetch('http://localhost:9988/user');
 

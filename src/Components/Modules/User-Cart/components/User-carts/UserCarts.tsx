@@ -1,7 +1,6 @@
 import React from 'react';
 import './userCarts.css';
 
-import AvatarImage from '../../../../../assets/images/userIcon.svg';
 import Avatar from '../../../../UI/Avatar/Avatar';
 import P from '../../../../UI/P/P';
 import Profil from '../Prifil/Profil';
@@ -10,7 +9,6 @@ import { useAppSelector } from '../../../../../hook/UseRedux';
 
 export default function UserCarts() {
   const usersProfile = useAppSelector((state) => state.userProfile);
-  console.log(usersProfile);
   return (
     <div className="UserCartsMain">
       <div className="UserCartsMainBgBlue">

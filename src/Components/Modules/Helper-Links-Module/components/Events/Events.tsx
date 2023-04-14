@@ -5,7 +5,11 @@ import P from '../../../../UI/P/P';
 import Arrow from '../../../../UI/Arrow/Arrow';
 import Event from '../../../../Components/Event/Events';
 
-export default function Events() {
+interface EventsProps {
+  eventsDate: string;
+}
+
+export default function Events({ eventsDate }: EventsProps) {
   return (
     <div className="EventsMains">
       <div className="EventHeader">
@@ -16,7 +20,7 @@ export default function Events() {
       </div>
 
       <div className="EventsDatas">
-        <Event eventsDate="Webinar UI Design at 09:00 am." />
+        <Event eventsDate={eventsDate} />
       </div>
     </div>
   );

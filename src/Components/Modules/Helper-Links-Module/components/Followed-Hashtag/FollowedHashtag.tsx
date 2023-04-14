@@ -4,8 +4,13 @@ import './followedHashtag.css';
 import P from '../../../../UI/P/P';
 import Arrow from '../../../../UI/Arrow/Arrow';
 import FollowersHashtag from '../../../../Components/Followers-Hashtag/FollowersHashtag';
+import { Hashtags } from '../../model/helperLinkModel';
 
-export default function FollowedHashtag() {
+interface FollowedHashtagProps {
+  hashtags: Hashtags[];
+}
+
+export default function FollowedHashtag({ hashtags }: FollowedHashtagProps) {
   return (
     <div className="FollowedHashtagsMain">
       <div className="FollowedHashtagsMainHeader">
@@ -15,14 +20,9 @@ export default function FollowedHashtag() {
         <Arrow position="right" />
       </div>
       <div className="FollowedHashtagsMainLinkss">
-        <FollowersHashtag followersName="#UIDesign" />
-        <FollowersHashtag followersName="#UIDesign" />
-        <FollowersHashtag followersName="#UIDesign" />
-        <FollowersHashtag followersName="#UIDesign" />
-        <FollowersHashtag followersName="#UIDesign" />
-        <FollowersHashtag followersName="#UIDesign" />
-        <FollowersHashtag followersName="#UIDesign" />
-        <FollowersHashtag followersName="#UIDesign" />
+        {hashtags?.map((hashtag: Hashtags) => (
+          <FollowersHashtag key={hashtag.id} followersName={hashtag.hashtag} />
+        ))}
       </div>
     </div>
   );

@@ -1,3 +1,4 @@
 import UserCarusel from './components/User-Carusel/UserCarusel';
+import carouselSlice from './store/carouselSlice';
 
-export default { UserCarusel };
+export { UserCarusel, carouselSlice };

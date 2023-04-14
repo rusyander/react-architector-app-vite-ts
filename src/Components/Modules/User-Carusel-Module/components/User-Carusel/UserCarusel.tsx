@@ -1,38 +1,26 @@
 import React from 'react';
 import './userCarusel.css';
 
-import UserImage from '../../../../../assets/images/userIcon.svg';
 import Avatar from '../../../../UI/Avatar/Avatar';
+
+import { useAppSelector } from '../../../../../hook/UseRedux';
 
 import Carusel from './Carusel/Carusel';
 
 export default function UserCarusel() {
+  const carouselData = useAppSelector((state) => state.carousel);
+
   return (
     <div className="UserCaruselMain">
       <Carusel>
-        <Avatar imageUrl={UserImage} avatar="list" text="Julie" />
-        <Avatar imageUrl={UserImage} avatar="list" text="Julie" />
-        <Avatar imageUrl={UserImage} avatar="list" text="Julie" />
-        <Avatar imageUrl={UserImage} avatar="list" text="Julie" />
-        <Avatar imageUrl={UserImage} avatar="list" text="Julie" />
-        <Avatar imageUrl={UserImage} avatar="list" text="Julie" />
-        <Avatar imageUrl={UserImage} avatar="list" text="Julie" />
-        <Avatar imageUrl={UserImage} avatar="list" text="Julie" />
-        <Avatar imageUrl={UserImage} avatar="list" text="Julie" />
-        <Avatar imageUrl={UserImage} avatar="list" text="Julie" />
-        <Avatar imageUrl={UserImage} avatar="list" text="Julie" />
-        <Avatar imageUrl={UserImage} avatar="list" text="Julie" />
-        <Avatar imageUrl={UserImage} avatar="list" text="Julie" />
-        <Avatar imageUrl={UserImage} avatar="list" text="Julie" />
-        <Avatar imageUrl={UserImage} avatar="list" text="Julie" />
-        <Avatar imageUrl={UserImage} avatar="list" text="Julie" />
-        <Avatar imageUrl={UserImage} avatar="list" text="Julie" />
-        <Avatar imageUrl={UserImage} avatar="list" text="Julie" />
-        <Avatar imageUrl={UserImage} avatar="list" text="Julie" />
-        <Avatar imageUrl={UserImage} avatar="list" text="Julie" />
-        <Avatar imageUrl={UserImage} avatar="list" text="Julie" />
-        <Avatar imageUrl={UserImage} avatar="list" text="Julie" />
-        <Avatar imageUrl={UserImage} avatar="list" text="Julie" />
+        {carouselData.carouselData?.map((carousel) => (
+          <Avatar
+            key={carousel.id}
+            imageUrl={carousel.userImage}
+            avatar="list"
+            text={carousel.name}
+          />
+        ))}
       </Carusel>
     </div>
   );
