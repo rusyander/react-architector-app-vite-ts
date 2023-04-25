@@ -3,8 +3,6 @@ import React from 'react';
 import './inputFilds.css';
 import cn from 'classnames';
 
-// import PropTypes from 'prop-types';
-
 import SearchIcons from '../../../assets/images/search.svg';
 
 interface InputFildsProps {
@@ -28,7 +26,7 @@ export default function InputFilds({
     <div className="InputFilds">
       {params === 'profile' && (
         <input
-          className={cn('InputFilds__input', {
+          className={cn('InputFildsInput', {
             small: size === 'small',
             medium: size === 'medium',
             large: size === 'large',
@@ -48,7 +46,7 @@ export default function InputFilds({
             className="InputFildsSearchIcons"
           />
           <input
-            className={cn('InputFilds__input__Search', {
+            className={cn('InputFildsInputSearch', {
               small: size === 'small',
               medium: size === 'medium',
               large: size === 'large',
@@ -63,7 +61,7 @@ export default function InputFilds({
 
       {params === 'post' && (
         <input
-          className={cn('InputFilds__input__Post', {
+          className={cn('InputFildsInputPost', {
             small: size === 'small',
             medium: size === 'medium',
             large: size === 'large',
@@ -83,12 +81,3 @@ InputFilds.defaultProps = {
   size: 'small',
   params: 'profile',
 };
-
-// InputFilds.propTypes = {
-//   type: PropTypes.oneOf(['text', 'password', 'email', 'number']),
-//   placeholder: PropTypes.string.isRequired,
-//   value: PropTypes.string.isRequired,
-//   onChange: PropTypes.func.isRequired,
-//   size: PropTypes.oneOf(['small', 'medium', 'large']),
-//   params: PropTypes.oneOf(['search', 'post', 'profile']),
-// };

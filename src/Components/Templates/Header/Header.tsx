@@ -4,9 +4,5 @@ import './header.css';
 import { HeaderModule } from '../../Modules/Header-Module';
 
 export default function Header() {
-  return (
-    <div>
-      <HeaderModule />
-    </div>
-  );
+  return <HeaderModule />;
 }

@@ -16,11 +16,9 @@ export default function InputCheckbox({
   };
 
   return (
-    <div>
-      <label className="custom-checkbox">
-        <input type="checkbox" checked={checkeds} onChange={handleOnChange} />
-        <span className="checkmark" />
-      </label>
-    </div>
+    <label className="custom-checkbox">
+      <input type="checkbox" checked={checkeds} onChange={handleOnChange} />
+      <span className="checkmark" />
+    </label>
   );
 }

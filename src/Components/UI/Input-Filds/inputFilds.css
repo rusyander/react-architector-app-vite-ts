@@ -1,4 +1,4 @@
-.InputFilds__input {
+.InputFildsInput {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
@@ -33,7 +33,7 @@
   align-items: center;
 }
 
-.InputFilds__input__Search {
+.InputFildsInputSearch {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
@@ -45,7 +45,7 @@
 }
 
 /* ************************************* */
-.InputFilds__input__Post {
+.InputFildsInputPost {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;

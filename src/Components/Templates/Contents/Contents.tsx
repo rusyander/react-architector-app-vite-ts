@@ -1,16 +1,16 @@
 import React from 'react';
 import './contents.css';
 
-import UserCarts from '../../Modules/User-Cart/components/User-carts/UserCarts';
+import UserCarts from '../../Modules/User-Cart-Module/components/User-carts/UserCarts';
 import HelpersLink from '../../Modules/Helper-Links-Module/components/Helpers-Link/HelpersLink';
-import Followings from '../../Modules/Following-Model/components/Followings/Followings';
-import CoursesPopular from '../../Modules/Courses-Posular-Model/components/Courses-Popular/CoursesPopuler';
-import LinkedIn from '../../Modules/LinkedIn-modules/components/LinkedIn/LinkedIn';
-import Message from '../../Modules/Message-modules/components/Message/Message';
-import UserCarusel from '../../Modules/User-Carusel-Module/components/User-Carusel/UserCarusel';
-import AddPost from '../../Modules/Add-Post-Modules/components/Add-Post/AddPost';
-import Devider from '../../Components/Devider/Devider';
+import CoursesPopular from '../../Modules/Courses-Posular-Module/components/Courses-Popular/CoursesPopuler';
+import LinkedIn from '../../Modules/LinkedIn-Module/components/LinkedIn/LinkedIn';
+import Message from '../../Modules/Message-Module/components/Message/Message';
+import AddPost from '../../Modules/Add-Post-Module/components/Add-Post/AddPost';
+import Devider from '../../Components/Divider/Devider';
 import Posts from '../../Modules/Posts-Module';
+import { UserCarousel } from '../../Modules/User-Carousel-Module';
+import { Followings } from '../../Modules/Following-Module';
 
 export default function Contents() {
   return (
@@ -27,7 +27,7 @@ export default function Contents() {
           </div>
 
           <div className="col-lg-6 col-md-6 col-sm-6">
-            <UserCarusel />
+            <UserCarousel />
             <div className="contentsRightSidePaddings">
               <AddPost />
             </div>

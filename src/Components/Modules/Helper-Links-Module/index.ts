@@ -1,4 +1,4 @@
 import HelpersLink from './components/Helpers-Link/HelpersLink';
-import helperLinksSlice from './store/helperLinks';
+import helperLinksSlice, { helperLinkfetch } from './store/helperLinks';
 
-export { HelpersLink, helperLinksSlice };
+export { HelpersLink, helperLinksSlice, helperLinkfetch };

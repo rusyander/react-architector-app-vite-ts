@@ -1,4 +1,4 @@
-.InputFilds__Styling {
+.InputFildsStyling {
   background: #f8f8fa;
   border-radius: 26px;
   padding: 15px 13px 18px 8px;
@@ -8,21 +8,21 @@
   text-align: center;
   width: 100%;
 }
-.InputFilds__Styling__Input {
+.InputFildsStylingInput {
   width: 100%;
 }
 
-.InputFilds__Styling.small {
+.InputFildsStyling.small {
   height: 48px;
 }
-.InputFilds__Styling.medium {
+.InputFildsStyling.medium {
   height: 50px;
 }
-.InputFilds__Styling.large {
+.InputFildsStyling.large {
   height: 60px;
 }
 /* ---- */
-.InputFilds__Styling__Icons {
+.InputFildsStylingIcons {
   display: flex;
 }
 .buttonMain {
@@ -34,4 +34,8 @@
 #icon {
   /* width: 100px; */
   cursor: pointer;
+}
+
+.InputFildsStylinInput {
+  width: 100%;
 }

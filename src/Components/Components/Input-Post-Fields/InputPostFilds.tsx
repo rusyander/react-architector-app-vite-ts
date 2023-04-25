@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+/* eslint-disable prefer-destructuring */
+/* eslint-disable no-plusplus */
+import React from 'react';
 import cn from 'classnames';
 
 import './inputPostFild.css';
@@ -14,7 +16,7 @@ interface InputPostFildsProps {
 
 export interface SubmitData {
   text: string;
-  image: string | null;
+  image: File[];
 }
 
 export default function InputPostFilds({
@@ -23,33 +25,40 @@ export default function InputPostFilds({
   size,
 }: InputPostFildsProps) {
   const [textValue, setTextValue] = React.useState<string>('');
-  const [fileValue, setFileValue] = React.useState<string>('');
+  const [fileValue, setFileValue] = React.useState<any[]>([]);
 
   function submitting() {
     if (textValue.length) {
       const submitData: SubmitData = {
         text: textValue,
-        image: fileValue === null ? null : fileValue,
+        image: fileValue,
       };
       onChange(submitData);
     }
     setTextValue('');
-    setFileValue('');
+    setFileValue([]);
   }
 
-  const onChanges = (event: any) => {
-    setFileValue(event.target.files);
+  const takeImage = (event: React.ChangeEvent<HTMLInputElement>): void => {
+    const files: File[] | null | any = event.target.files;
+    const filesArr = [];
+    if (files && files.length > 0) {
+      for (let i = 0; i < files.length; i++) {
+        filesArr.push(files[i]);
+      }
+      setFileValue(filesArr);
+    }
   };
 
   return (
     <div
-      className={cn('InputFilds__Styling', {
+      className={cn('InputFildsStyling', {
         small: size === 'small',
         medium: size === 'medium',
         large: size === 'large',
       })}
     >
-      <div className="InputFilds__Styling__Input">
+      <div className="InputFildsStylinInput">
         <InputFilds
           value={textValue}
           placeholder={placeholder}
@@ -58,14 +67,14 @@ export default function InputPostFilds({
         />
       </div>
 
-      <div className="InputFilds__Styling__Icons">
+      <div className="InputFildsStylingIcons">
         <label htmlFor="fileInput">
           <img id="icon" src={ImageIcons} alt="asd" />
         </label>
         <input
           id="fileInput"
           type="file"
-          onChange={onChanges}
+          onChange={takeImage}
           accept="image/png, image/jpeg, image/gif, image/jpg"
           multiple
         />

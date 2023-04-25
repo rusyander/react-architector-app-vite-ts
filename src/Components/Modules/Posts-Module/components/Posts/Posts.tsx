@@ -18,9 +18,9 @@ export default function Posts() {
       </P>
 
       <div className="PostsMainLinks">
-        <P size="small" weight="bold" className="PostsMainTranslate">
+        {/* <P size="small" weight="bold" className="PostsMainTranslate">
           See translate
-        </P>
+        </P> */}
 
         <GreenText size="small" weight="bold" className="PostsMainTranslate">
           See translate

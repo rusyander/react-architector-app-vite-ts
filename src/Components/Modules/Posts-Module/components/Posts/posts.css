@@ -18,6 +18,8 @@
 .PostsMainImageContents {
   margin-top: 5px;
   border-radius: 12px;
+  display: flex;
+  justify-content: center;
 }
 .PostsMainLinks {
   margin-top: 13px;

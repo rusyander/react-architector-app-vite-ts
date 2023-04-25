@@ -13,7 +13,7 @@ interface AvatarProps {
 
 export default function Avatar({ imageUrl, avatar, text }: AvatarProps) {
   return (
-    <div>
+    <>
       {avatar === 'list' && (
         <div className="listtImageDiv">
           <img
@@ -55,7 +55,7 @@ export default function Avatar({ imageUrl, avatar, text }: AvatarProps) {
       {avatar === 'default' && (
         <img src={imageUrl == null ? UsertAvatar : imageUrl} alt="avatar" />
       )}
-    </div>
+    </>
   );
 }
 

@@ -1,0 +1,21 @@
+.CoursesPopularMains {
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 27px 16px 27px 18px;
+}
+.CoursesPopularMainsHeaderTitle {
+  color: #070928;
+}
+.CoursesPopularMainsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.CoursesPopularMainsContents {
+  padding-top: 16px;
+}
+.CoursesPopularMainsMoreItems {
+  color: #27ae60;
+  cursor: pointer;
+  margin-top: 20px;
+}

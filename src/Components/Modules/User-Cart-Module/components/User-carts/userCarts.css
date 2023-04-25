@@ -1,0 +1,25 @@
+.UserCartsMainBgBlue {
+  position: relative;
+  width: 100%;
+
+  background: #3456ff;
+  height: 99px;
+  width: 100%;
+  border-radius: 32px 32px 0px 0px;
+}
+.UserCartsMainContents {
+  background-color: #fff;
+  border-radius: 0px 0px 32px 32px;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 38px;
+}
+.UserCartsMainContentsAvatar {
+  position: absolute;
+  left: 50%;
+  margin-left: -50px;
+  top: 40%;
+}
+.UserCartsMainContentsText {
+  padding-top: 77px;
+}

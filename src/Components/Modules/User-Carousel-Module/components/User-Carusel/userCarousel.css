@@ -1,0 +1,8 @@
+.UserCaruselMain {
+  padding: 8px 0;
+  background: #ffffff;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}

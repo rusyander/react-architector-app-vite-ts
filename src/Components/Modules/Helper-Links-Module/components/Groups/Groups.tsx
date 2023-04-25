@@ -13,7 +13,7 @@ interface GroupsProps {
 
 export default function Groups({ groups }: GroupsProps) {
   return (
-    <div>
+    <>
       <div className="GroupsHeader">
         <P size="medium" weight="bold" className="GroupsHeaderTitle">
           Groups
@@ -31,6 +31,6 @@ export default function Groups({ groups }: GroupsProps) {
       <GreenText size="medium" weight="bold" className="GroupsContentMore">
         More
       </GreenText>
-    </div>
+    </>
   );
 }
