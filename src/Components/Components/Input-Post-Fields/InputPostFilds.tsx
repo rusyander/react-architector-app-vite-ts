@@ -9,7 +9,7 @@ import SendIcons from '../../../assets/images/send.svg';
 import InputFilds from '../../UI/Input-Filds/InputFilds';
 
 interface InputPostFildsProps {
-  placeholder: string;
+  placeholder?: string;
   onChange: (data: SubmitData) => void;
   size?: 'small' | 'medium' | 'large';
 }
@@ -69,18 +69,29 @@ export default function InputPostFilds({
 
       <div className="InputFildsStylingIcons">
         <label htmlFor="fileInput">
-          <img id="icon" src={ImageIcons} alt="asd" />
+          <img id="icon" src={ImageIcons} alt="fileDownloadIcon" />
         </label>
         <input
           id="fileInput"
           type="file"
+          data-testId="fileInput"
           onChange={takeImage}
           accept="image/png, image/jpeg, image/gif, image/jpg"
           multiple
         />
 
-        <button type="submit" className="buttonMain" onClick={submitting}>
-          <img src={SendIcons} alt="asd" className="buttonMainiImages" />
+        <button
+          type="submit"
+          aria-label="submit"
+          className="buttonMain"
+          onClick={submitting}
+        >
+          <img
+            src={SendIcons}
+            data-testid="submitIcon"
+            alt="asd"
+            className="buttonMainiImages"
+          />
         </button>
       </div>
     </div>
@@ -89,4 +100,5 @@ export default function InputPostFilds({
 
 InputPostFilds.defaultProps = {
   size: 'small',
+  placeholder: 'Placeholder text',
 };

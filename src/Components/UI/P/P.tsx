@@ -12,6 +12,7 @@ interface IProps {
 export default function P({ size, weight, children, className }: IProps) {
   return (
     <p
+      data-testid="defaultText"
       className={cn('pText', 'pMain', className, {
         small: size === 'small',
         medium: size === 'medium',

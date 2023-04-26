@@ -7,7 +7,7 @@ import SearchIcons from '../../../assets/images/search.svg';
 
 interface InputFildsProps {
   type?: 'text' | 'password' | 'email' | 'number';
-  placeholder: string;
+  placeholder?: string;
   value: string;
   onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
   size?: 'small' | 'medium' | 'large';
@@ -80,4 +80,5 @@ InputFilds.defaultProps = {
   type: 'text',
   size: 'small',
   params: 'profile',
+  placeholder: 'My placeholder',
 };

@@ -10,10 +10,20 @@ interface ProfilePostsProps {
 export default function ProfilePosts({ views }: ProfilePostsProps) {
   return (
     <div className="ProfilePostsMain">
-      <P weight="bold" size="medium" className="ProfilePostsTitle">
+      <P
+        weight="bold"
+        data-testid="pText"
+        size="medium"
+        className="ProfilePostsTitle"
+      >
         Profile Post
       </P>
-      <P weight="bold" size="medium" className="ProfilePostsCount">
+      <P
+        weight="bold"
+        data-testid="pText"
+        size="medium"
+        className="ProfilePostsCount"
+      >
         {views}+
       </P>
     </div>

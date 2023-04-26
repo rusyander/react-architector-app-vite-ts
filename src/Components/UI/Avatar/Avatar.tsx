@@ -19,7 +19,7 @@ export default function Avatar({ imageUrl, avatar, text }: AvatarProps) {
           <img
             src={imageUrl == null ? UsertAvatar : imageUrl}
             className="listtImage"
-            alt="avatar"
+            alt="avatar-list"
           />
           <p className="listtImageText">{text}</p>
         </div>
@@ -29,7 +29,7 @@ export default function Avatar({ imageUrl, avatar, text }: AvatarProps) {
         <img
           src={imageUrl == null ? UsertAvatar : imageUrl}
           className="standartImage"
-          alt="avatar"
+          alt="avatar-standart"
         />
       )}
 
@@ -38,7 +38,7 @@ export default function Avatar({ imageUrl, avatar, text }: AvatarProps) {
           <img
             src={imageUrl == null ? UsertAvatar : imageUrl}
             className="mainImage"
-            alt="avatar"
+            alt="avatar-main"
           />
           <p className="mainImageText">{text}</p>
         </div>
@@ -47,13 +47,16 @@ export default function Avatar({ imageUrl, avatar, text }: AvatarProps) {
       {avatar === 'small' && (
         <img
           src={imageUrl == null ? UsertAvatar : imageUrl}
+          alt="avatar-small"
           className="smallImage"
-          alt="avatar"
         />
       )}
 
       {avatar === 'default' && (
-        <img src={imageUrl == null ? UsertAvatar : imageUrl} alt="avatar" />
+        <img
+          src={imageUrl == null ? UsertAvatar : imageUrl}
+          alt="avatar-default"
+        />
       )}
     </>
   );
@@ -62,4 +65,5 @@ export default function Avatar({ imageUrl, avatar, text }: AvatarProps) {
 Avatar.defaultProps = {
   avatar: 'standart',
   text: '',
+  imageUrl: UsertAvatar,
 };

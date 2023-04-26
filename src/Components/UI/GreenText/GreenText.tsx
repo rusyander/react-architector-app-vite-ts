@@ -17,6 +17,7 @@ export default function GreenText({
 }: GreenTextProps) {
   return (
     <p
+      data-testid="greenText"
       className={cn('greenText', className, {
         small: size === 'small',
         medium: size === 'medium',

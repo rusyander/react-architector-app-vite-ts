@@ -33,7 +33,7 @@ export default function CoursesPopuler({
         <img
           src={EyeImages}
           className="CoursesPopulerMainCountsImages"
-          alt=""
+          alt="EyeImages"
         />
         <P
           weight="standart"

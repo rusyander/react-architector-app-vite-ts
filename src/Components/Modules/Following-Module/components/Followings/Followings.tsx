@@ -3,7 +3,7 @@ import './followings.css';
 
 import P from '../../../../UI/P/P';
 import Arrow from '../../../../UI/Arrow/Arrow';
-import Folliwing from '../../../../Components/Following/Folliwing';
+import Folliwing from '../../../../Components/Following/Following';
 import GreenText from '../../../../UI/GreenText/GreenText';
 import { useAppSelector } from '../../../../../hook/UseRedux';
 

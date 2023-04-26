@@ -43,7 +43,7 @@ export default function PostAvatar({
             <div className="PostAvatarMainTextFollowing">
               <img
                 src={FollowImage}
-                alt="Follow"
+                alt="Follow-image"
                 className="PostAvatarMainTextFollowingPadding"
               />
               <P size="small" weight="standart">

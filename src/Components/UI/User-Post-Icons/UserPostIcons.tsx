@@ -16,3 +16,8 @@ export default function UserPostIcons({ imageUrl, text }: UserPostIconsProps) {
     </div>
   );
 }
+
+UserPostIcons.defaultProps = {
+  text: 'My text',
+  imageUrl: SendIcon,
+};

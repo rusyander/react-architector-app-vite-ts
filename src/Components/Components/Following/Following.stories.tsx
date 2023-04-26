@@ -3,7 +3,7 @@
 /* eslint-disable react/function-component-definition */
 import type { Meta } from '@storybook/react';
 
-import Folliwing from './Folliwing';
+import Folliwing from './Following';
 
 const meta: Meta = {
   title: 'Components/Following',

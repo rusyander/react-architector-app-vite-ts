@@ -22,3 +22,8 @@ export default function CartIcon({ imageUrl, text }: CartIconProps) {
     </div>
   );
 }
+
+CartIcon.defaultProps = {
+  text: 'My text',
+  imageUrl: CartIcons,
+};

@@ -9,7 +9,7 @@ export default function Devider() {
       <P size="medium" className="DeviderMainText" weight="standart">
         News
       </P>
-      <div className="DeviderMainLine" />
+      <div data-testid="divDevider" className="DeviderMainLine" />
       <P size="medium" className="DeviderMainText" weight="standart">
         Popular
       </P>

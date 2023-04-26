@@ -20,9 +20,14 @@ export default function PageButtons({
         isActive ? 'pageButtonsActive' : 'pageButtonsNotActive'
       }
     >
-      <button type="button">
-        <img src={value == null ? HomeIcon : value} alt="" />
+      <button aria-label="PageButtons" type="button">
+        <img src={value == null ? HomeIcon : value} alt="PageButtons" />
       </button>
     </NavLink>
   );
 }
+
+PageButtons.defaultProps = {
+  value: HomeIcon,
+  url: 'http://localhost:11160',
+};

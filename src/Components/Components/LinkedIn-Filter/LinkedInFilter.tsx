@@ -29,11 +29,7 @@ export default function LinedInFilter({
     returnData(checkData);
   };
   return (
-    <div
-      className="LinedInFilterMain"
-      role="presentation"
-      onClick={handleOnChange}
-    >
+    <div className="LinedInFilterMain" onClick={handleOnChange}>
       <div className="LinedInFilterMainCheck">
         <InputCheckbox checkeds={checked} setChecked={setChecked} />
       </div>
