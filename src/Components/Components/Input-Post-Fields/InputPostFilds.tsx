@@ -89,7 +89,6 @@ export default function InputPostFilds({
           <img
             src={SendIcons}
             data-testid="submitIcon"
-            alt="asd"
             className="buttonMainiImages"
           />
         </button>

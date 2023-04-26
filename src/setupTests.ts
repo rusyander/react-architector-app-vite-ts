@@ -1,7 +1,9 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import matchers from '@testing-library/jest-dom/matchers';
-import { expect } from 'vitest';
+// import matchers from '@testing-library/jest-dom/matchers';
+// import { expect } from 'vitest';
 
-expect.extend(matchers);
+// expect.extend(matchers);
 
 // import '@testing-library/jest-dom';
+
+import '@testing-library/jest-dom';

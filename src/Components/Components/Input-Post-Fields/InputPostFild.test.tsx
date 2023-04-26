@@ -6,8 +6,15 @@ import InputPostFilds from './InputPostFilds';
 
 describe('InputPostFilds', () => {
   test('render InputPostFilds', () => {
+    // const onChange = jest.fn();
+
+    const argList: any = [];
+    const callback = (...args: any) => {
+      argList.push(args);
+      console.log(argList);
+    };
     render(
-      <InputPostFilds placeholder="MyText" onChange={() => {}} size="medium" />
+      <InputPostFilds placeholder="MyText" onChange={callback} size="medium" />
     );
 
     const input = screen.getByRole('textbox');
@@ -28,5 +35,7 @@ describe('InputPostFilds', () => {
     expect(fileInput).toBeInTheDocument();
     expect(submitButton).toBeInTheDocument();
     expect(submitIcon).toBeInTheDocument();
+    expect(argList).toHaveLength(1);
+    expect(argList).toEqual([[{ text: 'MyInput', image: [] }]]);
   });
 });
