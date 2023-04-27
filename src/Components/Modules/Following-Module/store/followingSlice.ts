@@ -8,16 +8,18 @@ import {
 
 import { FollowingModel } from '../model/followingsModel';
 
-type FollowingType = {
+export type FollowingType = {
   loading: boolean;
   error: string | null;
   followingData: FollowingModel[];
+  status: string | null;
 };
 
 const initialState: FollowingType = {
   loading: false,
   error: null,
   followingData: [],
+  status: null,
 };
 
 export const followingFetch = createAsyncThunk<
@@ -54,13 +56,16 @@ const followingSlice = createSlice({
       .addCase(followingFetch.pending, (state) => {
         state.loading = true;
         state.error = null;
+        state.status = 'loading';
       })
       .addCase(followingFetch.fulfilled, (state, action) => {
         state.followingData = action.payload;
         state.loading = false;
+        state.status = 'resolved';
       })
       .addMatcher(asError, (state, action: PayloadAction<string>) => {
         state.error = action.payload as string;
+        state.status = 'rejected';
       });
   },
 });

@@ -8,15 +8,17 @@ import {
 
 import { UserProfileModel } from '../model/userProfileModel';
 
-type UserProfileState = {
+export type UserProfileState = {
   userProfile: UserProfileModel[];
   loading: boolean;
   error: string | null;
+  status: string | null;
 };
 
 const initialState: UserProfileState = {
   loading: false,
   error: null,
+  status: null,
   userProfile: [],
 };
 
@@ -27,7 +29,7 @@ export const fetchUserProfile = createAsyncThunk<
   // @ts-ignore
   { rejectWithValue: string }
   // eslint-disable-next-line consistent-return
->('todos/fetchTodos', async function (_, { rejectWithValue }) {
+>('userProfile/fetchUserProfile', async function (_, { rejectWithValue }) {
   try {
     const response = await fetch('http://localhost:9988/userProfile');
 
@@ -56,14 +58,17 @@ const userProfileSlice = createSlice({
   extraReducers: (builder) => {
     builder
       .addCase(fetchUserProfile.pending, (state) => {
+        state.status = 'loading';
         state.loading = true;
         state.error = null;
       })
       .addCase(fetchUserProfile.fulfilled, (state, action) => {
+        state.status = 'resolved';
         state.loading = false;
         state.userProfile = action.payload;
       })
       .addMatcher(asError, (state, action: PayloadAction<string>) => {
+        state.status = 'rejected';
         state.error = action.payload;
       });
   },

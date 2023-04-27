@@ -10,7 +10,7 @@ import {
   Hashtags,
   IHelperLinkModel,
 } from '../../model/helperLinkModel';
-import { HelperLinkType } from '../../store/helperLinks';
+import { HelperLinkType } from '../../store/helperLinksSlice';
 
 export default function HelpersLink() {
   const helperLinkData: HelperLinkType | IHelperLinkModel = useAppSelector(

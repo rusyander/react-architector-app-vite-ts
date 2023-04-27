@@ -8,16 +8,18 @@ import {
 
 import { CoursesPopularModule } from '../model/coursesPopulerModule';
 
-type CoursesPopulerType = {
+export type CoursesPopulerType = {
   loading: boolean;
   error: null | string;
   coursesPopulerData: CoursesPopularModule[];
+  status: null | string;
 };
 
 const initialState: CoursesPopulerType = {
   loading: false,
   error: null,
   coursesPopulerData: [],
+  status: null,
 };
 
 export const coursesPopularFetch = createAsyncThunk<
@@ -31,7 +33,7 @@ export const coursesPopularFetch = createAsyncThunk<
     try {
       const response = await fetch('http://localhost:9988/coursesPopuler');
       if (!response.ok) {
-        throw new Error('Something went wrong');
+        throw new Error('Server Error!');
       }
       const data = await response.json();
       return data;
@@ -56,13 +58,16 @@ const coursesPopulerSlice = createSlice({
       .addCase(coursesPopularFetch.pending, (state) => {
         state.loading = true;
         state.error = null;
+        state.status = 'loading';
       })
       .addCase(coursesPopularFetch.fulfilled, (state, action) => {
         state.loading = false;
         state.coursesPopulerData = action.payload;
+        state.status = 'resolved';
       })
       .addMatcher(asError, (state, action: PayloadAction<string>) => {
         state.error = action.payload as string;
+        state.status = 'rejected';
       });
   },
 });

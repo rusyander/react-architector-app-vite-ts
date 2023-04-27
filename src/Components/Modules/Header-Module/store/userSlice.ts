@@ -35,16 +35,18 @@ function asError(action: AnyAction) {
   return action.type.endsWith('rejected');
 }
 
-type UserType = {
+export type UserType = {
   user: UserState[];
   loading: boolean;
   error: string | null;
+  status: string | null;
 };
 
 const initialState: UserType = {
   user: [],
   loading: false,
   error: null,
+  status: null,
 };
 
 const userSlice = createSlice({
@@ -56,14 +58,17 @@ const userSlice = createSlice({
       .addCase(fetchUser.pending, (state) => {
         state.loading = true;
         state.error = null;
+        state.status = 'loading';
       })
       .addCase(fetchUser.fulfilled, (state, action) => {
         state.loading = false;
         state.user = action.payload;
+        state.status = 'resolved';
       })
       .addMatcher(asError, (state, action: PayloadAction<string>) => {
         state.loading = false;
         state.error = action.payload;
+        state.status = 'rejected';
       });
   },
 });

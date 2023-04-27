@@ -12,12 +12,14 @@ export type HelperLinkType = {
   loading: boolean;
   error: string | null;
   helperLinkData: IHelperLinkModel[];
+  status: string | null;
 };
 
 const initialState: HelperLinkType = {
   loading: false,
   error: null,
   helperLinkData: [],
+  status: null,
 };
 
 export const helperLinkfetch = createAsyncThunk<
@@ -31,7 +33,7 @@ export const helperLinkfetch = createAsyncThunk<
   try {
     const response = await fetch('http://localhost:9988/groupEventHashtag');
     if (!response.ok) {
-      throw new Error('Something went wrong!');
+      throw new Error('Server Error!');
     }
     const data = await response.json();
     return data;
@@ -54,13 +56,16 @@ const helperLinksSlice = createSlice({
     builder
       .addCase(helperLinkfetch.pending, (state) => {
         state.loading = true;
+        state.status = 'loading';
       })
       .addCase(helperLinkfetch.fulfilled, (state, action) => {
         state.loading = false;
         state.helperLinkData = action.payload;
+        state.status = 'resolved';
       })
       .addMatcher(asError, (state, action: PayloadAction<string>) => {
         state.error = action.payload;
+        state.status = 'rejected';
       });
   },
 });

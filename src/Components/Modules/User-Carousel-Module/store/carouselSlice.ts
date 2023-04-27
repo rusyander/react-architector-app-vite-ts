@@ -8,16 +8,18 @@ import {
 
 import { CarouselModel } from '../model/carouselModel';
 
-type CarouselType = {
+export type CarouselType = {
   loading: boolean;
   error: string | null;
   carouselData: CarouselModel[];
+  status: string | null;
 };
 
 const initialState: CarouselType = {
   loading: false,
   error: null,
   carouselData: [],
+  status: null,
 };
 
 export const carouselFetch = createAsyncThunk<
@@ -29,7 +31,7 @@ export const carouselFetch = createAsyncThunk<
   try {
     const response = await fetch('http://localhost:9988/users');
     if (!response.ok) {
-      throw new Error('Something went wrong!');
+      throw new Error('Server Error!');
     }
     const data = await response.json();
     return data;
@@ -53,12 +55,15 @@ const carouselSlise = createSlice({
       .addCase(carouselFetch.pending, (state) => {
         state.loading = true;
         state.error = null;
+        state.status = 'pending';
       })
       .addCase(carouselFetch.fulfilled, (state, action) => {
+        state.status = 'resolved';
         state.loading = false;
         state.carouselData = action.payload;
       })
       .addMatcher(asError, (state, action: PayloadAction<string>) => {
+        state.status = 'rejected';
         state.error = action.payload;
       });
   },
