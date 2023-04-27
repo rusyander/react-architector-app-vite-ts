@@ -5,7 +5,7 @@ import Avatar from '../../../../UI/Avatar/Avatar';
 
 import { useAppSelector } from '../../../../../hook/UseRedux';
 
-import Carousel from './Carusel/Carousel';
+import Carousel from '../Carusel/Carousel';
 
 export default function UserCarusel() {
   const carouselData = useAppSelector((state) => state.carousel);

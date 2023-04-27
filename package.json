@@ -11,7 +11,8 @@
     "server": "json-server --watch db.json --port 9988",
     "start": "concurrently \"npm run dev\" \"npm run server\" ",
     "sb": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "coverage": "vitest run --coverage"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.3",
@@ -40,6 +41,7 @@
     "@typescript-eslint/eslint-plugin": "^5.57.1",
     "@typescript-eslint/parser": "^5.57.1",
     "@vitejs/plugin-react": "^3.1.0",
+    "@vitest/coverage-c8": "^0.30.1",
     "concurrently": "^8.0.1",
     "eslint": "^8.2.0",
     "eslint-config-airbnb": "^19.0.4",

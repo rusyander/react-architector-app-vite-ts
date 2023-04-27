@@ -20,6 +20,7 @@ export default function Avatar({ imageUrl, avatar, text }: AvatarProps) {
             src={imageUrl == null ? UsertAvatar : imageUrl}
             className="listtImage"
             alt="avatar-list"
+            data-testid="avatar-list-id"
           />
           <p className="listtImageText">{text}</p>
         </div>

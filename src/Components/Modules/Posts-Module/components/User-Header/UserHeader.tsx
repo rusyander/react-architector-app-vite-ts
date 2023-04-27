@@ -17,7 +17,12 @@ export default function UserHeader() {
         // isFollowing
       />
 
-      <img src={Dots} className="UserHeadesrMainImages" alt="" />
+      <img
+        src={Dots}
+        data-testid="dots-image"
+        className="UserHeadesrMainImages"
+        alt=""
+      />
     </div>
   );
 }

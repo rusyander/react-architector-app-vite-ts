@@ -28,7 +28,7 @@ export default function Posts() {
       </div>
 
       <div className="PostsMainImageContents">
-        <img src={ImageContent} alt="" />
+        <img src={ImageContent} data-testid="user-image-push" alt="" />
       </div>
 
       <div className="PostsMainLinks">

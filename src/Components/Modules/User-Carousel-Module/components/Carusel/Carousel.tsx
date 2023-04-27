@@ -5,7 +5,7 @@ import './carousel.css';
 
 import { Carousel } from 'react-responsive-carousel';
 
-import Arrow from '../../../../../UI/Arrow/Arrow';
+import Arrow from '../../../../UI/Arrow/Arrow';
 
 interface CaruselProps {
   //   children: React.ReactNode;
@@ -67,7 +67,11 @@ export default function Carusel({ children }: CaruselProps | CarouselProps) {
 
   function CustomArrowNext({ onClickHandler }: any) {
     return (
-      <div className="CustomArrowNextIcons" onClick={onClickHandler}>
+      <div
+        className="CustomArrowNextIcons"
+        aria-label="arrowRight"
+        onClick={onClickHandler}
+      >
         {/* <FaChevronRight size={30} /> */}
         <Arrow position="right" />
       </div>
