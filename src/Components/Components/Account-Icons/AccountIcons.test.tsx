@@ -12,7 +12,7 @@ describe('AccountIcons', () => {
       />
     );
     const userName = screen.getByText(/Avelin/i);
-    const avatarImage = screen.getByAltText('avatar-small');
+    const avatarImage = screen.getByAltText('avatar-small-id');
     const arrow = screen.getByAltText('icons-arrow');
 
     expect(userName).toBeInTheDocument();

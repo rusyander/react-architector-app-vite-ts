@@ -74,7 +74,7 @@ export default function InputPostFilds({
         <input
           id="fileInput"
           type="file"
-          data-testId="fileInput"
+          data-testid="fileInput"
           onChange={takeImage}
           accept="image/png, image/jpeg, image/gif, image/jpg"
           multiple
