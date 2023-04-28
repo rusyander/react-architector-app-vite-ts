@@ -10,7 +10,7 @@ interface GroupsProps {
 
 export default function Groups({ groupsName }: GroupsProps) {
   return (
-    <div className="GroupsMain">
+    <div className="GroupsMain" data-testid="user-groups">
       <img src={GroupsImage} alt="groupsImage" />
       <P weight="standart" size="small" className="GroupsMainText">
         {groupsName}

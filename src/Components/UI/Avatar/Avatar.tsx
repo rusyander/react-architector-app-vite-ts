@@ -48,7 +48,8 @@ export default function Avatar({ imageUrl, avatar, text }: AvatarProps) {
       {avatar === 'small' && (
         <img
           src={imageUrl == null ? UsertAvatar : imageUrl}
-          alt="avatar-small"
+          alt="avatar-small-id"
+          data-testid="avatar-small-id"
           className="smallImage"
         />
       )}

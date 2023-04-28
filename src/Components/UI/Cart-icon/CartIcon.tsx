@@ -10,7 +10,7 @@ interface CartIconProps {
 
 export default function CartIcon({ imageUrl, text }: CartIconProps) {
   return (
-    <div className="CartIconBox">
+    <div className="CartIconBox" data-testid="helpful-link">
       <div className="CartIconImageDiv">
         <img
           className="CartIconImage"

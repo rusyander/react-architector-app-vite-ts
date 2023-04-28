@@ -12,7 +12,6 @@ export default function Arrow({ position }: IArrowProps) {
   return (
     <div className="ArrowBlock">
       <img
-        alt-label="arrow"
         src={ArrowIcon}
         alt="icons-arrow"
         className={cn('Arrow', {

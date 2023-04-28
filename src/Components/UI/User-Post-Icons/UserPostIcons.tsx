@@ -11,8 +11,14 @@ interface UserPostIconsProps {
 export default function UserPostIcons({ imageUrl, text }: UserPostIconsProps) {
   return (
     <div className="UserPostIconsContainer">
-      <img src={imageUrl == null ? SendIcon : imageUrl} alt="icons" />
-      <p className="UserPostIconsText">{text}</p>
+      <img
+        data-testid="post-links-icons"
+        src={imageUrl == null ? SendIcon : imageUrl}
+        alt="icons"
+      />
+      <p data-testid="post-link-text" className="UserPostIconsText">
+        {text}
+      </p>
     </div>
   );
 }

@@ -4,19 +4,17 @@ import './avatars.css';
 import Avatar from '../../../../UI/Avatar/Avatar';
 import P from '../../../../UI/P/P';
 import Arrow from '../../../../UI/Arrow/Arrow';
-import { useAppSelector } from '../../../../../hook/UseRedux';
+import { UserState } from '../../model/UserModel';
 
-export default function Avatars() {
-  const userList = useAppSelector((state) => state.user);
-
+export default function Avatars({ username, avatar }: UserState) {
   return (
     <div className="AvatarsMain">
       <div className="AvatarsMainIcons">
-        <Avatar imageUrl={userList.user[0]?.avatar} avatar="default" />
+        <Avatar imageUrl={avatar} avatar="default" />
       </div>
 
       <P size="small" weight="bold" className="AvatarsMainTextStyle">
-        {userList.user[0]?.username}
+        {username}
       </P>
       <Arrow position="bottom" />
     </div>

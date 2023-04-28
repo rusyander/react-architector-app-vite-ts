@@ -15,7 +15,7 @@ export default function FollowedHashtag({ hashtags }: FollowedHashtagProps) {
     <div className="FollowedHashtagsMain">
       <div className="FollowedHashtagsMainHeader">
         <P size="medium" weight="bold" className="FollowedHashtagsMainTitle">
-          Event
+          Hashtags
         </P>
         <Arrow position="right" />
       </div>

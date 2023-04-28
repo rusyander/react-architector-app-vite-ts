@@ -51,6 +51,7 @@ export default function InputFilds({
               medium: size === 'medium',
               large: size === 'large',
             })}
+            data-testid="input-search"
             type={type}
             placeholder={placeholder}
             value={value}
@@ -66,6 +67,7 @@ export default function InputFilds({
             medium: size === 'medium',
             large: size === 'large',
           })}
+          data-testid="input-post"
           type={type}
           placeholder={placeholder}
           value={value}

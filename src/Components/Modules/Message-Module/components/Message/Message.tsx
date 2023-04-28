@@ -7,7 +7,7 @@ import P from '../../../../UI/P/P';
 export default function Message() {
   return (
     <div className="MessageMainModule">
-      <img src={MessageIcon} alt="" />
+      <img src={MessageIcon} alt="message-icon" />
       <P size="medium" weight="bold" className="MessageMainModuleText">
         Message
       </P>

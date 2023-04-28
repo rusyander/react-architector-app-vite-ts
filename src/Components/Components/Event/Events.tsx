@@ -10,8 +10,8 @@ interface EventsProps {
 
 export default function Events({ eventsDate }: EventsProps) {
   return (
-    <div className="EventsMain">
-      <img src={CalendarImage} alt="" />
+    <div className="EventsMain" data-testid="events-time">
+      <img src={CalendarImage} alt="calendar-image" />
       <P weight="standart" size="small" className="EventsMainText">
         {eventsDate}
       </P>

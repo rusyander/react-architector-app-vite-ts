@@ -5,8 +5,10 @@ import Logo from '../../../../../assets/images/linkInIcon.png';
 import InputFilds from '../../../../UI/Input-Filds/InputFilds';
 import Navigations from '../Navigations/Navigations';
 import Avatars from '../Avatar/Avatasr';
+import { useAppSelector } from '../../../../../hook/UseRedux';
 
 export default function HeaderModule() {
+  const userList = useAppSelector((state) => state.user);
   const [searchValue, setSearchValue] = React.useState<string>('');
   return (
     <div className="HeaderModuleMain">
@@ -23,7 +25,7 @@ export default function HeaderModule() {
         </div>
         <Navigations />
         <div className="HeaderModuleMainDivider" />
-        <Avatars />
+        <Avatars {...userList.user[0]} />
       </div>
     </div>
   );
